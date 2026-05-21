@@ -193,5 +193,5 @@ The application reads and saves state across three primary JSON files:
 ---
 
 <p align="center">
-  <sub>Built with ❤️ by Iqbal &bull; Licensed under the MIT License</sub>
+  <sub>Built with 🧠 by Xylent &bull; Licensed under the MIT License</sub>
 </p>
