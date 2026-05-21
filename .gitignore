@@ -1,0 +1,47 @@
+# Python Caches & Compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Distribution & Build folders
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+ActiveState.venv/
+
+# IDEs & System Files
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Project Specific Local Files
+config.json
+*.log
+crash.log
+mapping_layout.txt

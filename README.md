@@ -1,0 +1,197 @@
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/1200257185364586558/1507014607636533331/banner.png?ex=6a105c39&is=6a0f0ab9&hm=5d4353c2ac98188ea59c0367e5850e4abfe4f1d86ffc03e3333f475c06b4b3b1&" alt="KeyViz Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Version"></a>
+  <a href="https://www.qt.io/"><img src="https://img.shields.io/badge/UI-PyQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="UI Framework"></a>
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Platform Compatibility">
+  <img src="https://img.shields.io/badge/License-MIT-F5A623?style=for-the-badge" alt="License">
+</p>
+
+<img src="divider.svg" width="100%" height="3">
+
+> **KeyViz** is a high-performance, real-time keyboard overlay application built with Python and PyQt6. Designed specifically for streamers, content creators, gamers, and presenters, it displays keystrokes on-screen in an interactive overlay featuring clean visual ripple effects and dynamic scaling.
+
+<img src="divider.svg" width="100%" height="3">
+
+## ✨ Key Features
+
+- **⚡ Real-Time Visualization**
+  Instantly displays keyboard inputs on-screen with zero latency.
+- **🌊 Elegant Ripple Effects**
+  Clean wave animations radiating outward from pressed keys, accompanied by dynamic font scaling for maximum clarity.
+- **🎮 Adaptive Layout Modes**
+  * `normal`: Displays the full standard QWERTY keyboard layout.
+  * `gaming`: Displays a minimized layout containing only gaming-essential keys (WASD, Space, Shift, etc.).
+  * `custom`: Displays a customizable selection of keys tailored to your exact workflow.
+- **🎨 Vibrant Color Themes**
+  Supports dynamic rainbow colors (`rgb`), solid white, the default system theme, or any custom HEX color code (e.g., `#FF5733`).
+- **🖱️ Click-Through Mode**
+  Locks the overlay in place so that mouse clicks pass right through, letting you play games or work in underlying windows uninterrupted.
+- **⚙️ Interactive GUI Positioning**
+  * Position the entire overlay window anywhere on your screen via interactive drag-and-drop.
+  * Rearrange individual keys visually directly from the overlay window.
+- **⌨️ Scan-Code Recorder**
+  Includes a built-in interactive utility (`manual_mapping.py`) to easily record and map non-standard keys.
+
+<img src="divider.svg" width="100%" height="3">
+
+## 🛠️ Requirements & Prerequisite
+
+> [!WARNING]
+> **Administrator Privileges Required**
+>
+> On Windows, the system-level `keyboard` library requires Administrator privileges to hook global keystrokes. Ensure you run your terminal or Command Prompt as **Administrator** when running KeyViz.
+
+* **Python 3.8+**
+* **Windows OS**
+
+<img src="divider.svg" width="100%" height="3">
+
+## 🚀 Installation & Setup
+
+Follow these steps to set up KeyViz on your machine:
+
+### 1. Install Dependencies
+Open your terminal or Command Prompt as **Administrator**, navigate to this project directory, and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install the required packages manually:
+```bash
+pip install PyQt6 keyboard
+```
+
+### 2. Register Global Command Link (CLI Alias)
+Choose one of the following methods to register the `keyviz` command so you can call it from any folder:
+
+* **Recommended for Users (Standard Build)**:
+  Installs the application permanently into your Python site-packages. Once complete, you can safely move or delete the source folder.
+  ```bash
+  pip install .
+  ```
+* **Recommended for Developers (Editable Build)**:
+  Links the command directly back to this development folder. Best if you plan to tweak configurations or modify the source code.
+  ```bash
+  pip install -e .
+  ```
+  > [!TIP]
+  > If you move this project folder to another path, you must run the editable installation command again to update the links.
+
+<img src="divider.svg" width="100%" height="3">
+
+## 📖 Usage Guide
+
+KeyViz can be launched globally, locally, or using the Windows batch helper.
+
+### Execution Methods
+- **Global Command** (if registered via pip):
+  ```bash
+  keyviz -m normal
+  ```
+- **Local Python Script**:
+  ```bash
+  python main.py -m normal
+  ```
+- **Windows Batch Shortcut**:
+  ```bash
+  .\keyviz.bat -m normal
+  ```
+
+---
+
+### 🎛️ Command Line Interface (CLI) Flags
+
+Tailor the overlay behavior and styling using the following parameters:
+
+| Flag | Parameter | Description |
+| :--- | :--- | :--- |
+| **`-m`, `--mode`** | `normal`, `gaming`, `custom` | Choose the layout profile to display. |
+| **`-c`, `--color`** | `default`, `rgb`, `white`, `#HEX` | Select the color scheme for ripple effects and key borders. |
+| **`-k`, `--keys`** | `RECORD`, `reset`, `"k,e,y,s"` | Set active keys: specify inline keys, trigger `RECORD` mode, or `reset` configurations. |
+| **`-p`, `--pos`** | `all`, `custom`, `x,y` | Toggle setup: reposition overlay (`all`), reposition individual keys (`custom`), or force `x,y` coordinates. |
+| **`--no-mouse`** | *(none)* | Lock the overlay window and allow mouse click-through behavior. |
+| **`--debug`** | *(none)* | Enable detailed debug log output in the console. |
+| **`-v`, `--version`**| *(none)* | Display the currently installed KeyViz version. |
+
+### 💡 Examples of CLI Usage
+
+* **Vibrant RGB Gaming Overlay**:
+  ```bash
+  keyviz -m gaming -c rgb
+  ```
+* **Click-Through Standard Overlay**:
+  ```bash
+  keyviz -m normal --no-mouse
+  ```
+* **Record Custom Gaming Layout**:
+  ```bash
+  keyviz -m gaming -k RECORD
+  ```
+  *(Press keys sequentially in the terminal, then hold `ESC` to save and exit)*
+* **Reset All Configurations & Positioning**:
+  ```bash
+  keyviz -k reset
+  ```
+
+<img src="divider.svg" width="100%" height="3">
+
+## 🎮 Interactive GUI Positioning
+
+Fine-tune your layout placement using interactive drag-and-drop modes:
+
+### 1. Repositioning the Overlay Window
+```bash
+keyviz -p all
+```
+* **Left-Click & Drag** the window to move it anywhere on your screen.
+* Press **`ENTER`** to save the position and exit.
+* **Right-Click** the overlay to lock it in place and activate click-through.
+
+### 2. Custom Key Layout Adjustment
+```bash
+keyviz -m gaming -p custom
+```
+* **Left-Click & Drag** individual keys to rearrange their placement on the overlay.
+* Press **`ENTER`** to save the customized layout and exit.
+
+<img src="divider.svg" width="100%" height="3">
+
+## 🗺️ Custom Layout Mapping
+
+For non-standard or mechanical keyboards, run the scan-code utility to map raw hardware inputs:
+
+1. Launch the utility:
+   ```bash
+   python keyviz/manual_mapping.py
+   ```
+2. Follow the terminal prompts by pressing the requested keys.
+3. Hold **`ESC`** to save your layout configuration.
+4. The output is stored in `mapping_layout.txt`. Use this data to update [layout.json](keyviz/layout.json) or [key.json](keyviz/key.json).
+
+<img src="divider.svg" width="100%" height="3">
+
+## 📂 Configuration Files Architecture
+
+The application reads and saves state across three primary JSON files:
+
+```
+📁 KeyViz/
+├── 📄 config.json       # Dynamic User Configuration (colors, position, recorded keys)
+└── 📁 keyviz/
+    ├── 📄 layout.json   # Static UI Blueprint (buttons, keys positioning guidelines)
+    └── 📄 key.json      # Hardware OS Scan-Codes Mapping
+```
+
+* **[config.json](config.json)**: Stores the dynamic settings (e.g. window location, custom keys, mode selection, theme colors).
+* **[layout.json](keyviz/layout.json)**: Contains coordinates, button widths, heights, and labels.
+* **[key.json](keyviz/key.json)**: Translates Windows Virtual Key codes to friendly names (e.g., `16` -> `l_shift`).
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ by Iqbal &bull; Licensed under the MIT License</sub>
+</p>
