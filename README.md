@@ -25,6 +25,13 @@
   * `normal`: Displays the full standard QWERTY keyboard layout.
   * `gaming`: Displays a minimized layout containing only gaming-essential keys (WASD, Space, Shift, etc.).
   * `custom`: Displays a customizable selection of keys tailored to your exact workflow.
+> [!NOTE]
+> **Current Layout Support**
+>
+> At the moment, the default `layout.json` configuration is designed specifically for **75% exploded knob keyboards**.  
+> Other layouts may still function partially, but key positioning and spacing might not align correctly without manual customization.
+>
+> Future updates may include additional presets for TKL, 65%, 60%, and full-size layouts.
 - **🎨 Vibrant Color Themes**
   Supports dynamic rainbow colors (`rgb`), solid white, the default system theme, or any custom HEX color code (e.g., `#FF5733`).
 - **🖱️ Click-Through Mode**
