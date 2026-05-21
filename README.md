@@ -15,13 +15,13 @@
 
 <img src="divider.svg" width="100%" height="3">
 
-## ✨ Key Features
+## <img src="https://img.shields.io/badge/-%20-f43f5e?style=flat-square" height="18" valign="middle"> Key Features
 
-- **⚡ Real-Time Visualization**
+- <img src="https://img.shields.io/badge/-%20-fbbf24?style=flat-square" height="12" valign="middle"> **Real-Time Visualization**
   Instantly displays keyboard inputs on-screen with zero latency.
-- **🌊 Elegant Ripple Effects**
+- <img src="https://img.shields.io/badge/-%20-38bdf8?style=flat-square" height="12" valign="middle"> **Elegant Ripple Effects**
   Clean wave animations radiating outward from pressed keys, accompanied by dynamic font scaling for maximum clarity.
-- **🎮 Adaptive Layout Modes**
+- <img src="https://img.shields.io/badge/-%20-a855f7?style=flat-square" height="12" valign="middle"> **Adaptive Layout Modes**
   * `normal`: Displays the full standard QWERTY keyboard layout.
   * `gaming`: Displays a minimized layout containing only gaming-essential keys (WASD, Space, Shift, etc.).
   * `custom`: Displays a customizable selection of keys tailored to your exact workflow.
@@ -32,19 +32,19 @@
 > Other layouts may still function partially, but key positioning and spacing might not align correctly without manual customization.
 >
 > Future updates may include additional presets for TKL, 65%, 60%, and full-size layouts.
-- **🎨 Vibrant Color Themes**
+- <img src="https://img.shields.io/badge/-%20-ec4899?style=flat-square" height="12" valign="middle"> **Vibrant Color Themes**
   Supports dynamic rainbow colors (`rgb`), solid white, the default system theme, or any custom HEX color code (e.g., `#FF5733`).
-- **🖱️ Click-Through Mode**
+- <img src="https://img.shields.io/badge/-%20-06b6d4?style=flat-square" height="12" valign="middle"> **Click-Through Mode**
   Locks the overlay in place so that mouse clicks pass right through, letting you play games or work in underlying windows uninterrupted.
-- **⚙️ Interactive GUI Positioning**
+- <img src="https://img.shields.io/badge/-%20-64748b?style=flat-square" height="12" valign="middle"> **Interactive GUI Positioning**
   * Position the entire overlay window anywhere on your screen via interactive drag-and-drop.
   * Rearrange individual keys visually directly from the overlay window.
-- **⌨️ Scan-Code Recorder**
+- <img src="https://img.shields.io/badge/-%20-6366f1?style=flat-square" height="12" valign="middle"> **Scan-Code Recorder**
   Includes a built-in interactive utility (`manual_mapping.py`) to easily record and map non-standard keys.
 
 <img src="divider.svg" width="100%" height="3">
 
-## 🛠️ Requirements & Prerequisite
+## <img src="https://img.shields.io/badge/-%20-ef4444?style=flat-square" height="18" valign="middle"> Requirements & Prerequisite
 
 > [!WARNING]
 > **Administrator Privileges Required**
@@ -56,7 +56,7 @@
 
 <img src="divider.svg" width="100%" height="3">
 
-## 🚀 Installation & Setup
+## <img src="https://img.shields.io/badge/-%20-10b981?style=flat-square" height="18" valign="middle"> Installation & Setup
 
 Follow these steps to set up KeyViz on your machine:
 
@@ -90,7 +90,7 @@ Choose one of the following methods to register the `keyviz` command so you can 
 
 <img src="divider.svg" width="100%" height="3">
 
-## 📖 Usage Guide
+## <img src="https://img.shields.io/badge/-%20-3b82f6?style=flat-square" height="18" valign="middle"> Usage Guide
 
 KeyViz can be launched globally, locally, or using the Windows batch helper.
 
@@ -110,7 +110,7 @@ KeyViz can be launched globally, locally, or using the Windows batch helper.
 
 ---
 
-### 🎛️ Command Line Interface (CLI) Flags
+### <img src="https://img.shields.io/badge/-%20-8b5cf6?style=flat-square" height="16" valign="middle"> Command Line Interface (CLI) Flags
 
 Tailor the overlay behavior and styling using the following parameters:
 
@@ -124,7 +124,7 @@ Tailor the overlay behavior and styling using the following parameters:
 | **`--debug`** | *(none)* | Enable detailed debug log output in the console. |
 | **`-v`, `--version`**| *(none)* | Display the currently installed KeyViz version. |
 
-### 💡 Examples of CLI Usage
+### <img src="https://img.shields.io/badge/-%20-eab308?style=flat-square" height="16" valign="middle"> Examples of CLI Usage
 
 * **Vibrant RGB Gaming Overlay**:
   ```bash
@@ -146,7 +146,7 @@ Tailor the overlay behavior and styling using the following parameters:
 
 <img src="divider.svg" width="100%" height="3">
 
-## 🎮 Interactive GUI Positioning
+## <img src="https://img.shields.io/badge/-%20-d946ef?style=flat-square" height="18" valign="middle"> Interactive GUI Positioning
 
 Fine-tune your layout placement using interactive drag-and-drop modes:
 
@@ -167,7 +167,7 @@ keyviz -m gaming -p custom
 
 <img src="divider.svg" width="100%" height="3">
 
-## 🗺️ Custom Layout Mapping
+## <img src="https://img.shields.io/badge/-%20-f97316?style=flat-square" height="18" valign="middle"> Custom Layout Mapping
 
 For non-standard or mechanical keyboards, run the scan-code utility to map raw hardware inputs:
 
@@ -181,7 +181,7 @@ For non-standard or mechanical keyboards, run the scan-code utility to map raw h
 
 <img src="divider.svg" width="100%" height="3">
 
-## 📂 Configuration Files Architecture
+## <img src="https://img.shields.io/badge/-%20-14b8a6?style=flat-square" height="18" valign="middle"> Configuration Files Architecture
 
 The application reads and saves state across three primary JSON files:
 
@@ -200,5 +200,5 @@ The application reads and saves state across three primary JSON files:
 ---
 
 <p align="center">
-  <sub>Built with 🧠 by Xylent &bull; Licensed under the MIT License</sub>
+  <sub>Developed by Xylent &bull; Licensed under the MIT License</sub>
 </p>
