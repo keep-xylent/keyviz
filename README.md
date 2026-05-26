@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="babner.png" alt="Keyviz Banner">
+  <img src="banner.png" alt="Keyviz Banner">
 </p>
 
 <p align="center">
