@@ -5,9 +5,8 @@
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Version"></a>
   <a href="https://www.qt.io/"><img src="https://img.shields.io/badge/UI-PyQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="UI Framework"></a>
-  <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Platform Compatibility">
   <img src="https://img.shields.io/badge/License-MIT-F5A623?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/repo-size/keep-xylent/Project-Kartel-Shop?style=for-the-badge" alt="Size">
+  <img src="https://img.shields.io/github/repo-size/keep-xylent/keyviz?style=for-the-badge" alt="Size">
 </p>
 
 <img src="divider.svg" width="100%" height="3">
