@@ -216,5 +216,5 @@ The user configuration (`config.json`) implements the following validation schem
 ---
 
 <p align="center">
-  <sub>Developed by Xylent &bull; Licensed under the MIT License</sub>
+  <sub>Developed by Xylent &bull;</sub>
 </p>
