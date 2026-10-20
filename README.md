@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1200257185364586558/1507014607636533331/banner.png?ex=6a105c39&is=6a0f0ab9&hm=5d4353c2ac98188ea59c0367e5850e4abfe4f1d86ffc03e3333f475c06b4b3b1&" alt="KeyViz Banner" width="100%">
+  <img src="https://github.com/keep-xylent/keyviz/blob/main/banner.png" alt="KeyViz Banner" width="100%">
 </p>
 
 <p align="center">
