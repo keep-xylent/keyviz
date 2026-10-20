@@ -1,47 +1,33 @@
-# Python Caches & Compiled files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.pyd
 
-# Distribution & Build folders
+# Distribution / packaging
 build/
-develop-eggs/
 dist/
-downloads/
+*.egg-info/
 eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
-# Virtual Environments
+# Virtual environments
 .venv/
 venv/
 ENV/
 env/
-ActiveState.venv/
 
-# IDEs & System Files
+# IDE and Editor files
 .vscode/
 .idea/
-.project
-.pydevproject
-.settings/
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+*.swp
+*.swo
 
-# Project Specific Local Files
+# Runtime & User files
 config.json
-*.log
 crash.log
-mapping_layout.txt
+*.log
+
+# Operating System
+Thumbs.db
+Desktop.ini
+.DS_Store
